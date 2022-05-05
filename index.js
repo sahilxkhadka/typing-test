@@ -53,7 +53,7 @@ const compareWords = (str1, str2) => {
             count++
     })
     let errorWords = words1.length - count
-    return (`, ${count} correct out of ${words1.length} and there were ${errorWords} errors.`)
+    return (`, ${count} correct out of ${words1.length} words and there were ${errorWords} errors.`)
 }
 
 btn.addEventListener("click", function () {
