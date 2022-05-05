@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: #FFFDD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.container h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: transparent;
+    background-color: #d4418e;
+    background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.container h2 {
+    user-select: none;
+}
+.container textarea {
+    background-color: #444;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px 0 0 ;
+    border: 20px solid #34495e;
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    resize: none;
+}
+.container button {
+    all: unset;
+    padding: 0.8rem 2.4rem;
+    background-color: #ddd;
+    color: #000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.container button:hover {
+    background-color: #ddd;
+    color: #111;
+    transition: 0.3s;
+}
+dialog {
+    margin: auto;
+    border: none;
+    border-radius: 12px;
+    max-width: 60%;
+}
+#message-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+dialog .dialog-container {
+    display: none;
+    padding: 3rem 4.5rem;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.dialog-container button {      
+    all: unset;
+    padding: 0.6rem 1.8rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 12px;
+    width: fit-content;
+}
